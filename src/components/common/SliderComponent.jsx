@@ -1,12 +1,14 @@
 import React from "react";
 import Slider from "@mui/material/Slider";
-import { Typography } from "@mui/material";
+import  {Stack, Typography }  from "@mui/material";
 
 const SliderComponent = ({ defaultValue, min, max, step, onChange, value }) => {
   return (
     <div className ="">
-      <Typography>Home Value</Typography>
-      <Typography>$ 3000</Typography>
+      <Stack gap={1}>
+      <Typography variant ="subtitle2">Home Value</Typography>
+      <Typography variant = "h5">$ 3000</Typography>
+      </Stack>
       <Slider
         defaultValue={defaultValue}
         min={min}
